@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="arg_names" href="arg_names.html" />
-    <link rel="prev" title="shape_to_tuple" href="shape_to_tuple.html" /> 
+    <link rel="prev" title="to_native_shape" href="to_native_shape.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul class="current">
@@ -59,13 +60,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../data_type.html">Data type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../elementwise.html">Elementwise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Extensions</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../general.html">General</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="get_referrers_recursive.html">get_referrers_recursive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="is_native_array.html">is_native_array</a></li>
 <li class="toctree-l2"><a class="reference internal" href="is_ivy_array.html">is_ivy_array</a></li>
 <li class="toctree-l2"><a class="reference internal" href="is_array.html">is_array</a></li>
 <li class="toctree-l2"><a class="reference internal" href="is_ivy_container.html">is_ivy_container</a></li>
-<li class="toctree-l2"><a class="reference internal" href="copy_array.html">copy_array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_array_mode.html">set_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unset_array_mode.html">unset_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_array_mode.html">get_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_nestable_mode.html">set_nestable_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unset_nestable_mode.html">unset_nestable_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_nestable_mode.html">get_nestable_mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array_equal.html">array_equal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arrays_equal.html">arrays_equal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="all_equal.html">all_equal</a></li>
@@ -74,14 +81,13 @@
 <li class="toctree-l2"><a class="reference internal" href="to_list.html">to_list</a></li>
 <li class="toctree-l2"><a class="reference internal" href="clip_vector_norm.html">clip_vector_norm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="clip_matrix_norm.html">clip_matrix_norm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="floormod.html">floormod</a></li>
-<li class="toctree-l2"><a class="reference internal" href="unstack.html">unstack</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fourier_encode.html">fourier_encode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="value_is_nan.html">value_is_nan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="has_nans.html">has_nans</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exists.html">exists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="default.html">default</a></li>
-<li class="toctree-l2"><a class="reference internal" href="shape_to_tuple.html">shape_to_tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="to_ivy_shape.html">to_ivy_shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="to_native_shape.html">to_native_shape</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">try_else_none</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arg_names.html">arg_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="match_kwargs.html">match_kwargs</a></li>
@@ -100,29 +106,33 @@
 <li class="toctree-l2"><a class="reference internal" href="num_arrays_in_memory.html">num_arrays_in_memory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="print_all_arrays_in_memory.html">print_all_arrays_in_memory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_queue_timeout.html">set_queue_timeout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="queue_timeout.html">queue_timeout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tmp_dir.html">tmp_dir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_queue_timeout.html">get_queue_timeout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unset_queue_timeout.html">unset_queue_timeout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_tmp_dir.html">get_tmp_dir</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_tmp_dir.html">set_tmp_dir</a></li>
 <li class="toctree-l2"><a class="reference internal" href="container_types.html">container_types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inplace_arrays_supported.html">inplace_arrays_supported</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inplace_variables_supported.html">inplace_variables_supported</a></li>
-<li class="toctree-l2"><a class="reference internal" href="supports_inplace.html">supports_inplace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supports_inplace_updates.html">supports_inplace_updates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="assert_supports_inplace.html">assert_supports_inplace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_item.html">get_item</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inplace_update.html">inplace_update</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inplace_decrement.html">inplace_decrement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inplace_increment.html">inplace_increment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cumsum.html">cumsum</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cumprod.html">cumprod</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scatter_flat.html">scatter_flat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scatter_nd.html">scatter_nd</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gather.html">gather</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gather_nd.html">gather_nd</a></li>
 <li class="toctree-l2"><a class="reference internal" href="multiprocessing.html">multiprocessing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="indices_where.html">indices_where</a></li>
-<li class="toctree-l2"><a class="reference internal" href="one_hot.html">one_hot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shape.html">shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_shape_array_mode.html">set_shape_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unset_shape_array_mode.html">unset_shape_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape_array_mode.html">shape_array_mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_num_dims.html">get_num_dims</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arg_info.html">arg_info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function_supported_devices_and_dtypes.html">function_supported_devices_and_dtypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function_unsupported_devices_and_dtypes.html">function_unsupported_devices_and_dtypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vmap.html">vmap</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../gradients.html">Gradients</a></li>
@@ -148,13 +158,13 @@
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -198,14 +208,43 @@
 <h1>try_else_none<a class="headerlink" href="#try-else-none" title="Permalink to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="ivy.functional.ivy.general.try_else_none">
-<span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">try_else_none</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/functional/ivy/general.html#try_else_none"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.functional.ivy.general.try_else_none" title="Permalink to this definition"></a></dt>
-<dd><p>Try and return the function, otherwise return None if an exception was raised
-during function execution.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>fn</strong> – Function to try and call and return.</p>
+<span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">try_else_none</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/functional/ivy/general.html#try_else_none"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.functional.ivy.general.try_else_none" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Try and return the function, otherwise return None</dt><dd><p>if an exception was raised during function execution.</p>
 </dd>
 </dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>) – Function to try and call and return.</p></li>
+<li><p><strong>args</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>) – list of arguments.</p></li>
+<li><p><strong>kwargs</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>) – dictionay of keyword arguments</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><em>Either the function itself or None if an exception was raised</em></p></li>
+<li><p><em>during function execution.</em></p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>with: if the function is executed without any exception
+&gt;&gt;&gt; x = ivy.array([1, 2, 3])
+&gt;&gt;&gt; y = ivy.array([4, 5, 6])
+&gt;&gt;&gt; z = ivy.try_else_none(ivy.add,x, y)
+&gt;&gt;&gt; print(z.__name__)
+add</p>
+<p>with: if the function is executed with an exception
+&gt;&gt;&gt; x = ivy.array([1, 2, 3])
+&gt;&gt;&gt; y = ‘hemant’
+&gt;&gt;&gt; z = ivy.try_else_none(ivy.add,x, y)
+&gt;&gt;&gt; print(z)
+None</p>
 </dd></dl>
 
 <div class="line-block">
@@ -219,14 +258,14 @@ during function execution.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="shape_to_tuple.html" class="btn btn-neutral float-left" title="shape_to_tuple" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="to_native_shape.html" class="btn btn-neutral float-left" title="to_native_shape" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="arg_names.html" class="btn btn-neutral float-right" title="arg_names" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

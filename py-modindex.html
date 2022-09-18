@@ -49,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
@@ -59,6 +60,7 @@
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/data_type.html">Data type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/elementwise.html">Elementwise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functional/ivy/extensions.html">Extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/layers.html">Layers</a></li>
@@ -83,13 +85,13 @@
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/sequential.html">Sequential</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/optimizers.html">Optimizers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/sequential.html">Sequential</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -147,12 +149,12 @@
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
-       <a href="data_classes/array.html#module-ivy.Array"><code class="xref">ivy.Array</code></a></td><td>
+       <a href="data_classes/array/activations.html#module-ivy.array.activations"><code class="xref">ivy.array.activations</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
-       <a href="data_classes/array/activations.html#module-ivy.array.activations"><code class="xref">ivy.array.activations</code></a></td><td>
+       <a href="data_classes/array/array.html#module-ivy.array.array"><code class="xref">ivy.array.array</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
@@ -262,11 +264,6 @@
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
-       <a href="data_classes/container.html#module-ivy.Container"><code class="xref">ivy.Container</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
        <a href="data_classes/container/activations.html#module-ivy.container.activations"><code class="xref">ivy.container.activations</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
@@ -278,6 +275,11 @@
        <td></td>
        <td>&#160;&#160;&#160;
        <a href="data_classes/container/container.html#module-ivy.container.container"><code class="xref">ivy.container.container</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
+       <a href="data_classes/container/conversions.html#module-ivy.container.conversions"><code class="xref">ivy.container.conversions</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
        <td></td>
@@ -417,6 +419,11 @@
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
+       <a href="functional/ivy/extensions.html#module-ivy.functional.ivy.extensions"><code class="xref">ivy.functional.ivy.extensions</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="cg-1">
+       <td></td>
+       <td>&#160;&#160;&#160;
        <a href="functional/ivy/general.html#module-ivy.functional.ivy.general"><code class="xref">ivy.functional.ivy.general</code></a></td><td>
        <em></em></td></tr>
      <tr class="cg-1">
@@ -492,56 +499,6 @@
      <tr class="cg-1">
        <td></td>
        <td>&#160;&#160;&#160;
-       <a href="inspection.html#module-ivy.inspection"><code class="xref">ivy.inspection</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful.html#module-ivy.stateful"><code class="xref">ivy.stateful</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/activations.html#module-ivy.stateful.activations"><code class="xref">ivy.stateful.activations</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/converters.html#module-ivy.stateful.converters"><code class="xref">ivy.stateful.converters</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/initializers.html#module-ivy.stateful.initializers"><code class="xref">ivy.stateful.initializers</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/layers.html#module-ivy.stateful.layers"><code class="xref">ivy.stateful.layers</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/module.html#module-ivy.stateful.module"><code class="xref">ivy.stateful.module</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/norms.html#module-ivy.stateful.norms"><code class="xref">ivy.stateful.norms</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/optimizers.html#module-ivy.stateful.optimizers"><code class="xref">ivy.stateful.optimizers</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="stateful/sequential.html#module-ivy.stateful.sequential"><code class="xref">ivy.stateful.sequential</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
        <a href="verbosity.html#module-ivy.verbosity"><code class="xref">ivy.verbosity</code></a></td><td>
        <em></em></td></tr>
    </table>
@@ -554,7 +511,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

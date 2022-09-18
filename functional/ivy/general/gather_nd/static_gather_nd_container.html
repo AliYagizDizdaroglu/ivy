@@ -49,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul class="current">
@@ -59,13 +60,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../data_type.html">Data type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../elementwise.html">Elementwise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../extensions.html">Extensions</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../general.html">General</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../get_referrers_recursive.html">get_referrers_recursive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../is_native_array.html">is_native_array</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../is_ivy_array.html">is_ivy_array</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../is_array.html">is_array</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../is_ivy_container.html">is_ivy_container</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../copy_array.html">copy_array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../set_array_mode.html">set_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unset_array_mode.html">unset_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../get_array_mode.html">get_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../set_nestable_mode.html">set_nestable_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unset_nestable_mode.html">unset_nestable_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../get_nestable_mode.html">get_nestable_mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../array_equal.html">array_equal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arrays_equal.html">arrays_equal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../all_equal.html">all_equal</a></li>
@@ -74,14 +81,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../to_list.html">to_list</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../clip_vector_norm.html">clip_vector_norm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../clip_matrix_norm.html">clip_matrix_norm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../floormod.html">floormod</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../unstack.html">unstack</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fourier_encode.html">fourier_encode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../value_is_nan.html">value_is_nan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../has_nans.html">has_nans</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exists.html">exists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../default.html">default</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../shape_to_tuple.html">shape_to_tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../to_ivy_shape.html">to_ivy_shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../to_native_shape.html">to_native_shape</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../try_else_none.html">try_else_none</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arg_names.html">arg_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../match_kwargs.html">match_kwargs</a></li>
@@ -100,19 +106,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../num_arrays_in_memory.html">num_arrays_in_memory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../print_all_arrays_in_memory.html">print_all_arrays_in_memory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../set_queue_timeout.html">set_queue_timeout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../queue_timeout.html">queue_timeout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tmp_dir.html">tmp_dir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../get_queue_timeout.html">get_queue_timeout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unset_queue_timeout.html">unset_queue_timeout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../get_tmp_dir.html">get_tmp_dir</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../set_tmp_dir.html">set_tmp_dir</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_types.html">container_types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inplace_arrays_supported.html">inplace_arrays_supported</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inplace_variables_supported.html">inplace_variables_supported</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../supports_inplace.html">supports_inplace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../supports_inplace_updates.html">supports_inplace_updates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../assert_supports_inplace.html">assert_supports_inplace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../get_item.html">get_item</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inplace_update.html">inplace_update</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inplace_decrement.html">inplace_decrement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inplace_increment.html">inplace_increment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cumsum.html">cumsum</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cumprod.html">cumprod</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../scatter_flat.html">scatter_flat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../scatter_nd.html">scatter_nd</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gather.html">gather</a></li>
@@ -124,11 +130,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../multiprocessing.html">multiprocessing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../indices_where.html">indices_where</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../one_hot.html">one_hot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape.html">shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../set_shape_array_mode.html">set_shape_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unset_shape_array_mode.html">unset_shape_array_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shape_array_mode.html">shape_array_mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../get_num_dims.html">get_num_dims</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arg_info.html">arg_info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../function_supported_devices_and_dtypes.html">function_supported_devices_and_dtypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../function_unsupported_devices_and_dtypes.html">function_unsupported_devices_and_dtypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vmap.html">vmap</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../gradients.html">Gradients</a></li>
@@ -154,13 +164,13 @@
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/sequential.html">Sequential</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/optimizers.html">Optimizers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/sequential.html">Sequential</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -203,43 +213,6 @@
              
   <section id="ivy-container-static-gather-nd">
 <h1>ivy.Container.static_gather_nd<a class="headerlink" href="#ivy-container-static-gather-nd" title="Permalink to this heading"></a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="ivy.container.container_methods.static_gather_nd">
-<span class="sig-prename descclassname">ivy.Container.</span></span><span class="sig-name descname"><span class="pre">static_gather_nd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_chains</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_apply</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prune_unapplied</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">map_sequences</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/ivy/container/general.html#ContainerWithGeneral.static_gather_nd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.container.container_methods.static_gather_nd" title="Permalink to this definition"></a></dt>
-<dd><p>ivy.Container static method variant of ivy.gather_nd.
-This method simply wraps the function, and so the docstring
-for ivy.gather_nd also applies to this method
-with minimal changes.</p>
-<p class="rubric">Examples</p>
-<p>With one <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> input:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]),</span>                           <span class="n">b</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ivy</span><span class="o">.</span><span class="n">static_gather_nd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-<span class="go">{</span>
-<span class="go">    a: ivy.array(1.),</span>
-<span class="go">    b: ivy.array(5.)</span>
-<span class="go">}</span>
-</pre></div>
-</div>
-<p>With multiple <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> inputs:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]),</span>                           <span class="n">b</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">4.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">]),</span>                           <span class="n">b</span><span class="o">=</span><span class="n">ivy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="o">.</span><span class="n">static_gather_nd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="go">{</span>
-<span class="go">        a: ivy.array(0.),</span>
-<span class="go">        b: ivy.array(4.)</span>
-<span class="go">}</span>
-</pre></div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../../../../data_classes/container/container/Container.html#ivy.container.container.Container" title="ivy.container.container.Container"><code class="xref py py-class docutils literal notranslate"><span class="pre">Container</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><strong>Supported Frameworks:</strong></div>
@@ -258,7 +231,7 @@ with minimal changes.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
