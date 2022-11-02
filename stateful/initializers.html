@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Initializers &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -22,7 +21,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Initializer" href="initializers/Initializer.html" />
-    <link rel="prev" title="LAMB" href="optimizers/LAMB.html" /> 
+    <link rel="prev" title="GEGLU" href="activations/GEGLU.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -79,13 +78,16 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../data_classes/container.html">Container</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data_classes/array.html">Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_classes/container.html">Container</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="norms.html">Norms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="optimizers.html">Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activations.html">Activations</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Initializers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="initializers/Initializer.html">Initializer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="initializers/Constant.html">Constant</a></li>
@@ -98,23 +100,20 @@
 <li class="toctree-l2"><a class="reference internal" href="initializers/KaimingNormal.html">KaimingNormal</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sequential.html">Sequential</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module.html">Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module.html">Module</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../ivy"">Ivy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mech"">Ivy mech</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../vision"">Ivy vision</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../robot"">Ivy robot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gym"">Ivy gym</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../memory"">Ivy memory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../builder"">Ivy builder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../models"">Ivy models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ecosystem"">Ivy ecosystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy.html">Ivy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_mech.html">Ivy mech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_vision.html">Ivy vision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_robot.html">Ivy robot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_gym.html">Ivy gym</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_memory.html">Ivy memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_builder.html">Ivy builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_models.html">Ivy models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/ivy_ecosystem.html">Ivy ecosystem</a></li>
 </ul>
 
         </div>
@@ -426,7 +425,7 @@ etc. Default is cpu.</p></li>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="optimizers/LAMB.html" class="btn btn-neutral float-left" title="LAMB" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="activations/GEGLU.html" class="btn btn-neutral float-left" title="GEGLU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="initializers/Initializer.html" class="btn btn-neutral float-right" title="Initializer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
